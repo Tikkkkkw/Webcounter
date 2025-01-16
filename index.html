@@ -1,23 +1,25 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
-        <script src ="index.js" ></script>
+        <script src="index.js"></script>
     </head>
     <body>
-                <h1>Students entered:</h1>
-                <h2 id="countel">0</h2>
-                <button id="increment-btn" onclick="increment()">INCREMENT</button>
-                <script>
-                        let count = 0
-                        function increment(){
-                        count = count + 1
-                        console.log(count)
-                        countel.innerHTML=count
-                        console.log(countel)
-                    }
-                </script>
-    </body>
+        <div id = "container">
 
+        <h1>Students entered:</h1>
+        <h2 id="countel">0</h2>
+        <button id="increment-btn" onclick="increment()">INCREMENT</button>
+        
+        <script>
+            let count = 0;
+
+            function increment() {
+                count += 1;  
+                console.log(count); 
+                document.getElementById("countel").innerHTML = count;  // Update the displayed count
+            }
+        </script>
+         </div>
+    </body>
 </html>
