@@ -7,19 +7,12 @@
     <body>
         <div id = "container">
 
-        <h1>Students entered:</h1>
-        <h2 id="countel">0</h2>
-        <button id="increment-btn" onclick="increment()">INCREMENT</button>
-        
-        <script>
-            let count = 0;
-
-            function increment() {
-                count += 1;  
-                console.log(count); 
-                document.getElementById("countel").innerHTML = count;  // Update the displayed count
-            }
-        </script>
+            <h1>Students entered:</h1>
+            <h2 id="countel">0</h2>
+            <button id="increment-btn" onclick="increment()">INCREMENT</button>
+            
+            <h2 id="saves"></h2>
+            <button id="save-btn" onclick="save()">SAVE</button>
          </div>
     </body>
 </html>

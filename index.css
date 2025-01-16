@@ -51,14 +51,25 @@ body {
     width: 200px;
     margin-bottom: 5px;
     border-radius: 5px;
-  }
-  
-  #increment-btn {
-   background: #2C2891;;
-  }
-  
-  #save-btn {
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+#increment-btn {
+    background: #2C2891;
+}
+
+#increment-btn:hover {
+    background: #3C2D9E; 
+    transform: translateY(-2px); 
+}
+
+#save-btn {
     background: #660063;
-  }
-  
+}
+
+#save-btn:hover {
+    background: #7A0066; 
+    transform: translateY(-2px); 
+}
   
